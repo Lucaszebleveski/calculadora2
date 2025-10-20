@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Flexível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Altura, Distância e Ângulo</h1>
+    <div class="container">
+        <label>O que você quer calcular?</label>
+        <select id="opcao">
+            <option value="altura">Altura</option>
+            <option value="distancia">Distância</option>
+            <option value="angulo">Ângulo</option>
+            <option value="hipotenusa">Hipotenusa</option>
+        </select>
+        <label>Convenção do triângulo:</label>
+        <select id="convensao">
+            <option value="codigo">Altura = cateto oposto</option>
+            <option value="caderno">Distância = cateto oposto</option>
+        </select>
+        <div id="visualizacao-triangulo">
+            <div id="triangulo-fundo">
+                <span id="valor-oposto" class="valor-triangulo">?</span>
+                <span id="valor-adjacente" class="valor-triangulo">?</span>
+                <span id="valor-angulo" class="valor-triangulo">?</span>
+                <span id="valor-hipotenusa" class="valor-triangulo">?</span>
+            </div>
+        </div>
+        <div id="inputs"></div>
+        <button id="calculFar">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
